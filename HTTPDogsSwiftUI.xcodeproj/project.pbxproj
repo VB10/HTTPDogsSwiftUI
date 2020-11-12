@@ -18,6 +18,14 @@
 		3530A999255B534600A5371C /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A998255B534600A5371C /* ErrorMessages.swift */; };
 		3530A99B255B548C00A5371C /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A99A255B548C00A5371C /* NetworkTests.swift */; };
 		3530A99D255B57F400A5371C /* DogMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A99C255B57F400A5371C /* DogMockModel.swift */; };
+		35584210255C9F200098B1D7 /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558420F255C9F200098B1D7 /* DogsView.swift */; };
+		35584212255CA0E30098B1D7 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35584211255CA0E30098B1D7 /* DogsViewModel.swift */; };
+		35584214255CA63E0098B1D7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35584213255CA63E0098B1D7 /* Dog.swift */; };
+		3558421A255CA6E90098B1D7 /* DogCardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35584219255CA6E90098B1D7 /* DogCardWidget.swift */; };
+		3558421D255CAD5D0098B1D7 /* KingfisherSwiftUIStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 3558421C255CAD5D0098B1D7 /* KingfisherSwiftUIStatic */; };
+		3558421F255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3558421E255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic */; };
+		35584220255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3558421E255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		35584222255CAD5D0098B1D7 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35584221255CAD5D0098B1D7 /* KingfisherSwiftUI */; };
 		3582976E255B3B58001A4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582976D255B3B58001A4BD7 /* AppDelegate.swift */; };
 		35829770255B3B58001A4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582976F255B3B58001A4BD7 /* SceneDelegate.swift */; };
 		35829772255B3B58001A4BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35829771255B3B58001A4BD7 /* ContentView.swift */; };
@@ -39,6 +47,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		35584223255CAD5E0098B1D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35584220255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3530A975255B453300A5371C /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		3530A977255B453B00A5371C /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
@@ -53,6 +75,10 @@
 		3530A998255B534600A5371C /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		3530A99A255B548C00A5371C /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		3530A99C255B57F400A5371C /* DogMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMockModel.swift; sourceTree = "<group>"; };
+		3558420F255C9F200098B1D7 /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
+		35584211255CA0E30098B1D7 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
+		35584213255CA63E0098B1D7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		35584219255CA6E90098B1D7 /* DogCardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCardWidget.swift; sourceTree = "<group>"; };
 		3582976A255B3B58001A4BD7 /* HTTPDogsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPDogsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3582976D255B3B58001A4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		3582976F255B3B58001A4BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3558421F255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic in Frameworks */,
+				3558421D255CAD5D0098B1D7 /* KingfisherSwiftUIStatic in Frameworks */,
+				35584222255CAD5D0098B1D7 /* KingfisherSwiftUI in Frameworks */,
 				3582978F255B3E64001A4BD7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +116,7 @@
 		3530A979255B467B00A5371C /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				35584215255CA6C30098B1D7 /* Widget */,
 				3530A97C255B46AA00A5371C /* Enum */,
 				3530A97B255B46A200A5371C /* Util */,
 				3530A97A255B469B00A5371C /* Model */,
@@ -147,6 +177,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		35584215255CA6C30098B1D7 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				35584216255CA6CC0098B1D7 /* Card */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		35584216255CA6CC0098B1D7 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				35584219255CA6E90098B1D7 /* DogCardWidget.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		35829761255B3B57001A4BD7 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +218,7 @@
 				3530A979255B467B00A5371C /* Product */,
 				35829782255B3C48001A4BD7 /* Features */,
 				3582977B255B3B58001A4BD7 /* Info.plist */,
+				35829771255B3B58001A4BD7 /* ContentView.swift */,
 				35829778255B3B58001A4BD7 /* LaunchScreen.storyboard */,
 				35829775255B3B58001A4BD7 /* Preview Content */,
 			);
@@ -234,7 +281,7 @@
 		35829786255B3C8C001A4BD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				35829771255B3B58001A4BD7 /* ContentView.swift */,
+				3558420F255C9F200098B1D7 /* DogsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +289,7 @@
 		35829787255B3C90001A4BD7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				35584211255CA0E30098B1D7 /* DogsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +297,7 @@
 		35829788255B3C94001A4BD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35584213255CA63E0098B1D7 /* Dog.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +358,7 @@
 				35829766255B3B58001A4BD7 /* Sources */,
 				35829767255B3B58001A4BD7 /* Frameworks */,
 				35829768255B3B58001A4BD7 /* Resources */,
+				35584223255CAD5E0098B1D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +367,9 @@
 			name = HTTPDogsSwiftUI;
 			packageProductDependencies = (
 				3582978E255B3E64001A4BD7 /* Alamofire */,
+				3558421C255CAD5D0098B1D7 /* KingfisherSwiftUIStatic */,
+				3558421E255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic */,
+				35584221255CAD5D0098B1D7 /* KingfisherSwiftUI */,
 			);
 			productName = HTTPDogsSwiftUI;
 			productReference = 3582976A255B3B58001A4BD7 /* HTTPDogsSwiftUI.app */;
@@ -352,6 +405,7 @@
 			mainGroup = 35829761255B3B57001A4BD7;
 			packageReferences = (
 				3582978D255B3E64001A4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3558421B255CAD5D0098B1D7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3582976B255B3B58001A4BD7 /* Products */;
 			projectDirPath = "";
@@ -405,12 +459,16 @@
 				3530A97E255B46B100A5371C /* NetworkPath.swift in Sources */,
 				3530A976255B453300A5371C /* BaseResponse.swift in Sources */,
 				35829770255B3B58001A4BD7 /* SceneDelegate.swift in Sources */,
+				3558421A255CA6E90098B1D7 /* DogCardWidget.swift in Sources */,
 				3530A985255B4C1C00A5371C /* ProjectError.swift in Sources */,
 				35829772255B3B58001A4BD7 /* ContentView.swift in Sources */,
+				35584214255CA63E0098B1D7 /* Dog.swift in Sources */,
 				3530A999255B534600A5371C /* ErrorMessages.swift in Sources */,
 				3530A981255B486500A5371C /* INetworkManager.swift in Sources */,
 				3530A978255B453B00A5371C /* BaseError.swift in Sources */,
+				35584212255CA0E30098B1D7 /* DogsViewModel.swift in Sources */,
 				3530A983255B4B4000A5371C /* NetworkMethod.swift in Sources */,
+				35584210255C9F200098B1D7 /* DogsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +717,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3558421B255CAD5D0098B1D7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
 		3582978D255B3E64001A4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -670,6 +736,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3558421C255CAD5D0098B1D7 /* KingfisherSwiftUIStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3558421B255CAD5D0098B1D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIStatic;
+		};
+		3558421E255CAD5D0098B1D7 /* KingfisherSwiftUIDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3558421B255CAD5D0098B1D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIDynamic;
+		};
+		35584221255CAD5D0098B1D7 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3558421B255CAD5D0098B1D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
 		3582978E255B3E64001A4BD7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3582978D255B3E64001A4BD7 /* XCRemoteSwiftPackageReference "Alamofire" */;

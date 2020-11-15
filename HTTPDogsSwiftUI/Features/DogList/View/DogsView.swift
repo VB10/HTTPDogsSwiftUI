@@ -10,18 +10,37 @@ import SwiftUI
 
 struct DogsView: View {
 
-    let dogs : [Dog] = [Dog(code: 100, dogMockDescription: "Doggs", imageURL: "https://httpstatusdogs.com/img/100.jpg"),
-                Dog(code: 100, dogMockDescription: "Doggs", imageURL: "https://httpstatusdogs.com/img/100.jpg")
-    ]
+    @ObservedObject var viewModel: DogsViewModel
+
+
+    fileprivate func loadindgView() -> some View {
+        return GeometryReader { geometry in
+            return IndicatorWidget().frame(height: geometry.size.height * 0.2, alignment: .center).foregroundColor(.orange)
+        }
+    }
+
+    fileprivate func dogListView() -> some View {
+        return VStack {
+            List {
+                ForEach(viewModel.dogList, id: \.id) { item in
+                    DogCardWidget(dog: item).onAppear {
+                        self.viewModel.loadMoreContent(currentItem: item)
+                    }
+                }
+            }
+            if (viewModel.isLoading) {
+                loadindgView()
+            }
+
+        }
+    }
 
     var body: some View {
         VStack {
             Text("Welcome HTTP Dog Project").bold()
             Spacer()
-            List {
-                ForEach(dogs, id: \.id) { item in
-                    DogCardWidget(dog: item)
-                }
+            ZStack {
+                dogListView()
             }
         }
     }
@@ -29,6 +48,6 @@ struct DogsView: View {
 
 struct DogsView_Previews: PreviewProvider {
     static var previews: some View {
-        DogsView()
+        DogsView(viewModel: DogsViewModel())
     }
 }

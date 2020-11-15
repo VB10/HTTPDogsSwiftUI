@@ -23,11 +23,31 @@ class NetworkTests: XCTestCase {
     func testGetAllDogs() {
         let expectation = self.expectation(description: "result")
 
-        networkManager.fetch(path: .dogs, paramaters: nil, onSuccess: { (response: BaseResponse<[DogMock]>) in
+        networkManager.fetch(path: .dogs, paramaters: nil, method: .get, onSuccess: { (response: BaseResponse<[DogMock]>) in
             assert(true)
-            
+
             expectation.fulfill()
         }) { (error) in
+            assert(false)
+            expectation.fulfill()
+
+            print("false")
+        }
+        wait(for: [expectation], timeout: timeout)
+    }
+
+    func testGetAllDogsLimit() {
+        let expectation = self.expectation(description: "result")
+
+        networkManager.fetch(path: .dogs,
+
+                             paramaters: [
+                                "orderBy": "\"code\"", "limitToFirst": "10","startAt":"0"
+                             ], method: .get, onSuccess: { (response: BaseResponse<[DogMock]>) in
+                                 assert(true)
+
+                                 expectation.fulfill()
+                             }) { (error) in
             assert(false)
             expectation.fulfill()
 

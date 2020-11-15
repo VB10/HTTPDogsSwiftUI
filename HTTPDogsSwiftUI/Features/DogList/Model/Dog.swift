@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Dog: Identifiable {
+struct Dog: Identifiable, Codable {
     var id = UUID()
 
     let code: Int

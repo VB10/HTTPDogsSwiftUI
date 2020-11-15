@@ -15,7 +15,6 @@ struct DogCardWidget: View {
 
     var body: some View {
         VStack {
-
             KFImage(URL(string: dog.imageURL)).resizable().aspectRatio(contentMode: .fit).frame(height: 200, alignment: .center)
             Spacer()
             HStack {

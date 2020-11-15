@@ -18,6 +18,11 @@
 		3530A999255B534600A5371C /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A998255B534600A5371C /* ErrorMessages.swift */; };
 		3530A99B255B548C00A5371C /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A99A255B548C00A5371C /* NetworkTests.swift */; };
 		3530A99D255B57F400A5371C /* DogMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530A99C255B57F400A5371C /* DogMockModel.swift */; };
+		3545AC8F2560929700FF2275 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545AC8E2560929700FF2275 /* DogService.swift */; };
+		3545AC932560938A00FF2275 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545AC922560938A00FF2275 /* NetworkService.swift */; };
+		3545AC9725609E4700FF2275 /* ActivitiyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545AC9625609E4700FF2275 /* ActivitiyIndicator.swift */; };
+		3545AC9A25609E6400FF2275 /* IndicatorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545AC9925609E6400FF2275 /* IndicatorWidget.swift */; };
+		3545AC9C2560ACC100FF2275 /* NetworkQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545AC9B2560ACC100FF2275 /* NetworkQuery.swift */; };
 		35584210255C9F200098B1D7 /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3558420F255C9F200098B1D7 /* DogsView.swift */; };
 		35584212255CA0E30098B1D7 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35584211255CA0E30098B1D7 /* DogsViewModel.swift */; };
 		35584214255CA63E0098B1D7 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35584213255CA63E0098B1D7 /* Dog.swift */; };
@@ -75,6 +80,11 @@
 		3530A998255B534600A5371C /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		3530A99A255B548C00A5371C /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		3530A99C255B57F400A5371C /* DogMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogMockModel.swift; sourceTree = "<group>"; };
+		3545AC8E2560929700FF2275 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
+		3545AC922560938A00FF2275 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3545AC9625609E4700FF2275 /* ActivitiyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiyIndicator.swift; sourceTree = "<group>"; };
+		3545AC9925609E6400FF2275 /* IndicatorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorWidget.swift; sourceTree = "<group>"; };
+		3545AC9B2560ACC100FF2275 /* NetworkQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkQuery.swift; sourceTree = "<group>"; };
 		3558420F255C9F200098B1D7 /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
 		35584211255CA0E30098B1D7 /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
 		35584213255CA63E0098B1D7 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
@@ -116,6 +126,7 @@
 		3530A979255B467B00A5371C /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				3545AC912560938300FF2275 /* Service */,
 				35584215255CA6C30098B1D7 /* Widget */,
 				3530A97C255B46AA00A5371C /* Enum */,
 				3530A97B255B46A200A5371C /* Util */,
@@ -145,6 +156,7 @@
 				3530A982255B4B4000A5371C /* NetworkMethod.swift */,
 				3530A984255B4C1C00A5371C /* ProjectError.swift */,
 				3530A998255B534600A5371C /* ErrorMessages.swift */,
+				3545AC9B2560ACC100FF2275 /* NetworkQuery.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -177,9 +189,50 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		3545AC8D2560924500FF2275 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC8E2560929700FF2275 /* DogService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3545AC912560938300FF2275 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC922560938A00FF2275 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3545AC9425609E3300FF2275 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC9525609E3800FF2275 /* Indicator */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		3545AC9525609E3800FF2275 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC9625609E4700FF2275 /* ActivitiyIndicator.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		3545AC9825609E5000FF2275 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC9925609E6400FF2275 /* IndicatorWidget.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
 		35584215255CA6C30098B1D7 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				3545AC9825609E5000FF2275 /* Indicator */,
 				35584216255CA6CC0098B1D7 /* Card */,
 			);
 			path = Widget;
@@ -236,6 +289,7 @@
 		35829781255B3C40001A4BD7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3545AC9425609E3300FF2275 /* Widget */,
 				35829789255B3D27001A4BD7 /* Initialize */,
 				35829785255B3C7D001A4BD7 /* Resources */,
 				35829783255B3C56001A4BD7 /* Application */,
@@ -263,6 +317,7 @@
 		35829784255B3C63001A4BD7 /* DogList */ = {
 			isa = PBXGroup;
 			children = (
+				3545AC8D2560924500FF2275 /* Service */,
 				35829788255B3C94001A4BD7 /* Model */,
 				35829787255B3C90001A4BD7 /* ViewModel */,
 				35829786255B3C8C001A4BD7 /* View */,
@@ -454,16 +509,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3582978C255B3D5F001A4BD7 /* NetworkManager.swift in Sources */,
+				3545AC9C2560ACC100FF2275 /* NetworkQuery.swift in Sources */,
+				3545AC9A25609E6400FF2275 /* IndicatorWidget.swift in Sources */,
 				35829792255B437F001A4BD7 /* NetworkConfig.swift in Sources */,
 				3582976E255B3B58001A4BD7 /* AppDelegate.swift in Sources */,
 				3530A97E255B46B100A5371C /* NetworkPath.swift in Sources */,
+				3545AC932560938A00FF2275 /* NetworkService.swift in Sources */,
 				3530A976255B453300A5371C /* BaseResponse.swift in Sources */,
 				35829770255B3B58001A4BD7 /* SceneDelegate.swift in Sources */,
 				3558421A255CA6E90098B1D7 /* DogCardWidget.swift in Sources */,
 				3530A985255B4C1C00A5371C /* ProjectError.swift in Sources */,
+				3545AC8F2560929700FF2275 /* DogService.swift in Sources */,
 				35829772255B3B58001A4BD7 /* ContentView.swift in Sources */,
 				35584214255CA63E0098B1D7 /* Dog.swift in Sources */,
 				3530A999255B534600A5371C /* ErrorMessages.swift in Sources */,
+				3545AC9725609E4700FF2275 /* ActivitiyIndicator.swift in Sources */,
 				3530A981255B486500A5371C /* INetworkManager.swift in Sources */,
 				3530A978255B453B00A5371C /* BaseError.swift in Sources */,
 				35584212255CA0E30098B1D7 /* DogsViewModel.swift in Sources */,

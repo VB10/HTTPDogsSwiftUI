@@ -13,7 +13,11 @@ struct BaseError {
     var errorMessage: String?
     var statusCode: Int?
     var debugMessage: String?
-
+    
+    init(message: String) {
+        self.errorMessage = message
+    }
+    
     init(afError: AFError?) {
         guard let error = afError else {
             self.statusCode = 500

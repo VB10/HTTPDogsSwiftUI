@@ -19,10 +19,10 @@ class NetworkMockManager: INetworkManager {
         self.config = config
     }
 
-    func fetch<T>(path: NetworkPath, paramaters: [String: String]?, onSuccess: @escaping (BaseResponse<T>) -> Void, onError: @escaping Error) where T: Decodable, T: Encodable {
+    func fetch<T>(path: NetworkPath, paramaters: [String: String]?,method:HTTPMethod, onSuccess: @escaping (BaseResponse<T>) -> Void, onError: @escaping Error) where T: Decodable, T: Encodable {
 
         AF.request(url(path),
-                   method: .get,
+                   method: method,
                    parameters: paramaters
         ).validate().responseDecodable(of: T.self)
         { (response) in
@@ -38,7 +38,4 @@ class NetworkMockManager: INetworkManager {
     {
         return config.baseUrl + path.firebasePath()
     }
-
-
-
 }

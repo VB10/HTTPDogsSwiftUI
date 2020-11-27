@@ -14,12 +14,7 @@ struct DogsView: View {
 
     var body: some View {
         NavigationView(content: {
-            VStack {
-                ZStack {
-                    dogListView()
-                }
-            } .navigationBarTitle("HTTP Dogs")
-
+            dogListView().navigationBarTitle("HTTP Dogs")
         })
     }
 

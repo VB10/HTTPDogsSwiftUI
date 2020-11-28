@@ -250,8 +250,6 @@
 		3582976C255B3B58001A4BD7 /* HTTPDogsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				042E5FB1256A3030000E441C /* AppDelegate.swift */,
-				042E5FB2256A3030000E441C /* SceneDelegate.swift */,
 				35829781255B3C40001A4BD7 /* Core */,
 				3530A979255B467B00A5371C /* Product */,
 				35829782255B3C48001A4BD7 /* Features */,
@@ -336,6 +334,8 @@
 		35829789255B3D27001A4BD7 /* Initialize */ = {
 			isa = PBXGroup;
 			children = (
+				042E5FB1256A3030000E441C /* AppDelegate.swift */,
+				042E5FB2256A3030000E441C /* SceneDelegate.swift */,
 				3582978A255B3D44001A4BD7 /* Network */,
 			);
 			path = Initialize;

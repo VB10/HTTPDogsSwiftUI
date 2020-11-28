@@ -22,9 +22,7 @@ final class NetworkManager: INetworkManager {
     }
 
     func fetch<T>(path: NetworkPath, paramaters: [String: String]?,
-
                   method: HTTPMethod,
-
                   onSuccess: @escaping (BaseResponse<T>) -> Void, onError: @escaping Error) where T: Decodable, T: Encodable {
 
         AF.request(url(path),

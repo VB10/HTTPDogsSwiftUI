@@ -35,7 +35,9 @@ struct DogsView: View {
 
     fileprivate func loadindgView() -> some View {
         return GeometryReader { geometry in
-            return IndicatorWidget().frame(height: geometry.size.height * 0.2,
+            return IndicatorWidget().frame(
+                width: geometry.size.width * 0.1,
+                height: geometry.size.height * 0.1,
                                            alignment: .center).foregroundColor(.orange)
         }
     }

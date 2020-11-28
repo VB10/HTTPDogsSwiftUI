@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 final class DogsViewModel: ObservableObject {
 
     @Published var isLoading: Bool = false
@@ -32,6 +31,10 @@ final class DogsViewModel: ObservableObject {
             print("error")
         }
     }
+    
+    private func changeLoading() {
+        self.isLoading = !isLoading
+    }
 
     func fetchDogListLoadMore(dog: Dog) {
         changeLoading()
@@ -51,9 +54,7 @@ final class DogsViewModel: ObservableObject {
         }
     }
 
-    private func changeLoading() {
-        self.isLoading = !isLoading
-    }
+
 
 
 }
